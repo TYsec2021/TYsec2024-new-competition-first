@@ -1,0 +1,2 @@
+flag：
+TYCTF{cmd_eat_rabbit}

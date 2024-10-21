@@ -1,0 +1,3 @@
+TYCTF{welcome to tysec ~~}
+
+控制台查看flag

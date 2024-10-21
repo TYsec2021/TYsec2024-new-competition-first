@@ -1,0 +1,2 @@
+文中不合理的语句
+flag{Welcome-to-join-TYsec!^-^}

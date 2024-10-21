@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>原神，启动！</title>
+<link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div class="load">
+<img src="./img/OP_s.png">
+</div>
+<audio src="./img/OPGO.mp3"></audio>
+<script src="https://cdn.staticfile.org/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const audio = document.querySelector('audio')
+            const load = document.querySelector('.load')
+
+            swal({
+                title: '',
+                text: '确定启动原神么？',
+                icon: 'warning',
+                button: '确定',
+                closeOnClickOutside: false,
+            }).then(() => {
+                document.body.addEventListener('click', () => {
+                    load.classList.add('activate')
+                    audio.play()
+					
+                    // 跳转到当前目录下的指定 PHP 文件，例如 'yourfile.php'
+					
+                    setTimeout(() => {
+                        window.location.href = 'start_game.php'; // 修改为你的 PHP 文件名
+                    }, 4000); // 可根据需要调整延迟时间
+                })
+            })
+        })
+    </script>
+</html>
